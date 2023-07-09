@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\line_chart_page.css" />
+    <None Include="wwwroot\gifs\lineChart.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EPPlus" Version="6.2.6" />
     <PackageReference Include="EPPlusHelper" Version="2.5.5" />
   </ItemGroup>

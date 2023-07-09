@@ -16,8 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\gidin\source\repos\SberAnaliticsWebApp\SberAnaliticsWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/gidin/source/repos/SberAnaliticsWebApp/SberAnaliticsWebApp/Views/Home/HomePage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
+[C:/Users/gidin/source/repos/SberAnaliticsWebApp/SberAnaliticsWebApp/Views/Home/LineChartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaW5lQ2hhcnRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gidin/source/repos/SberAnaliticsWebApp/SberAnaliticsWebApp/Views/Home/PieChartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQaWVDaGFydFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gidin/source/repos/SberAnaliticsWebApp/SberAnaliticsWebApp/Views/Shared/Error.cshtml]

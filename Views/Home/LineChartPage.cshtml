@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "_Layout";
+}
+<html>
+    <head>
+    <link rel="stylesheet" href="/css/line_chart_page.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom/dist/chartjs-plugin-zoom.min.js"></script>
+    </head>
+    <body>
+        <div id="linechart-page-div">
+        <div class="linechart-div">
+            <label>График всех транзакций</label>
+            <canvas id="linechart-all-sbers"></canvas>
+        </div>
+        <div class="linechart-div">
+            <label class="">График всех поступлений</label>
+            <canvas id="linechart-positive-sbers"></canvas>
+        </div>
+        <div class="linechart-div">
+            <label>График всех расходов</label>
+            <canvas id="linechart-negative-sbers"></canvas>
+        </div>
+            <table class="datagrid">
+                <thead>
+                    <tr>
+                        <th>
+                            Дата и время
+                        </th>
+                        <th>
+                            Название
+                        </th>
+                        <th>
+                            Категория
+                        </th>
+                        <th>
+                            Сумма операции
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="sber in sbersInTable">
+                        <th>{{sber.datetime}}</th>
+                        <th>{{sber.name}}</th>
+                        <th>{{sber.category}}</th>
+                        <th v-if="sber.summ > 0" >
+                        <label class="positive_summ">{{sber.summ}}</label>
+                        </th>
+                        <th v-else>
+                        <label class="negative_summ">{{sber.summ}}</label>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="/js/line_chart.js">
+
+        </script>
+
+    </body>
+</html>
+

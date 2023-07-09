@@ -13,7 +13,7 @@ namespace SberAnaliticsWebApp.Controllers
             _userContext = userContext;
         }
 
-        public IActionResult HomePage()
+        public IActionResult LineChartPage()
         {
             return View();
         }
@@ -21,9 +21,14 @@ namespace SberAnaliticsWebApp.Controllers
         public async Task<IActionResult> ImportAndGetSbers([FromForm] IFormFile file)
         {
             await _userContext.LoadDataFromExcel(file);
-            return Json(_userContext.Sbers);
+            return Ok();
         }
 
+        public async Task<IActionResult> GetSbers() 
+        {
+            var Sbers = _userContext.Sbers;
+            return Json(_userContext.Sbers.OrderBy(c=>c.Datetime));
+        }
         public async Task<IActionResult> GetDateBetween()
         {
             return Json(_userContext.BetweenDate);
@@ -33,12 +38,11 @@ namespace SberAnaliticsWebApp.Controllers
             _userContext.BetweenDate = betweenDate;
             return Json(_userContext.FilterSbers());
         }
-        //public async Task<IActionResult> FilterAndGetSbers([FromBody] BetweenDate betweenDate)
-        //{
-        //    await _userContext.InstallBetweenDate(betweenDate);
-        //    await _userContext.FilterSbers();
-        //    return Json(_userContext.Sbers);
-        //}
+
+        public async Task<IActionResult> GetStatisticsGroupYear()
+        {
+            return Json(await _userContext.GetStatisticsGroupYear()); 
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

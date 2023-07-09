@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets\\SberAnaliticsWebApp.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\css\\line_chart_page.css",
+      "PackagePath": "staticwebassets\\css\\line_chart_page.css"
     },
     {
       "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\gifs\\lineChart.gif",
+      "PackagePath": "staticwebassets\\gifs\\lineChart.gif"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\gifs\\pieChart.gif",
+      "PackagePath": "staticwebassets\\gifs\\pieChart.gif"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\js\\layout.js",
+      "PackagePath": "staticwebassets\\js\\layout.js"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\js\\line_chart.js",
+      "PackagePath": "staticwebassets\\js\\line_chart.js"
     },
     {
       "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\js\\site.js",

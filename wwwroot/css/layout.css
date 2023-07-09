@@ -1,0 +1,114 @@
+﻿.body{
+    background-color:darkslategray;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    left: 200px;
+}
+.import-button {
+    background-color: black;
+    color: white;
+    height: 43px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="file"] {
+    width: 400px;
+    height: 30px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    background-color: gray;
+    border-radius: 4px;
+    color: white;
+    
+}
+.between-div{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    margin-top:10px;
+}
+
+
+input[type="file"]::file-selector-button {
+    padding: 6px 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*
+input[type="file"]::file-selector-button:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"]::file-selector-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}*/
+.container{
+    position:relative;
+    overflow-x:hidden;
+}
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: gray;
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+.nav-container{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     height:30%;
+     flex-direction:column;
+}
+.menu-btn {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: -100px;
+    top: 0px;
+    justify-content: center;
+    font-size: 20px;
+    cursor:pointer;
+    border-radius:15px;
+}
+
+.nav-container-item {
+    background-color: black;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    width: 350px;
+    margin-top: 20px;
+    
+}
+.nav-container-item img{
+    width: 140px;
+    height: 60px;
+    border-radius: 20px;
+}
+.nav-container-item a{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration:none;
+}

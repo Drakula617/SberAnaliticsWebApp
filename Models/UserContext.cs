@@ -29,6 +29,14 @@ namespace SberAnaliticsWebApp.Models
                 DateEnd = Sbers.Max(c => c.DateOnly),
             };
         }
+        public async Task<List<object>> GetStatisticsGroupYear()
+        {
+            return Sbers.GroupBy(c => c.DateOnly.Year).Select(s => new {
+                Year = s.Key,
+                TotalExpenses = s.Where(c=> c.Summ < 0).Sum(c=> c.Summ),
+                TotalProfit = s.Where(c=> c.Summ > 0).Sum(c => c.Summ)
+            }).Cast<object>().ToList();
+        }
         public async Task<List<Sber>> FilterSbers()
         {
             return Sbers.Where(c => c.DateOnly >= BetweenDate.DateBegin && c.DateOnly <= BetweenDate.DateEnd).ToList();

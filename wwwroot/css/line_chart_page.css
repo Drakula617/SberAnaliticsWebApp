@@ -1,0 +1,39 @@
+﻿
+.linechart-div label{
+
+}
+.linechart-div canvas{
+    width: 1000px !important;
+    height: 400px !important;
+    margin: 100px;
+}
+.datagrid {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+    border-radius:20px;
+}
+
+    .datagrid td, .datagrid th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    /*.datagrid tr:nth-child(even) {
+        background-color: red;
+    }*/
+
+    .datagrid th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+
+    }
+    .datagrid tbody label.negative_summ {
+        color: red;
+    }
+    .datagrid tbody label.positive_summ {
+        color: lightgreen;
+    }
