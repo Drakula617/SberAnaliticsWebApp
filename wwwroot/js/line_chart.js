@@ -2,25 +2,35 @@
 linechartVue = new Vue({
     el: '#linechart-page-div',
     data: {
-        sbersInTable: []
+        sbersInTable: [],
+        datebetween: {},
+        countSbers: '',
+        sumPositive:''
     },
     methods:
     {
+        getDateBetween: function () {
+            axios.post('/Home/GetDateBetween').then((response) => {
+                this.datebetween = response.data;
+            });
+        },
         getSbers: function () {
             axios.post('/Home/GetSbers').then((response) => {
                 
 /*                let data = response.data;*/
                 console.log(response.data);
                 this.sbersInTable = Object.assign([], response.data);
+                this.countSbers = this.sbersInTable.length;
+                this.sumPositive = this.sbersInTable.filter(c => c.summ > 0).reduce((total, item) => total + item.summ, 0).toFixed(2);
                 this.createLineChartPositiveSbers(response.data);
-                this.createLineChartNegativeSbers(response.data);
-                this.createLineChartAllSbers(response.data);
+                //this.createLineChartNegativeSbers(response.data);
+                //this.createLineChartAllSbers(response.data);
 
             });
         },
         createLineChartPositiveSbers: function (data) {
             let chartdata = Object.assign([], data);
-            let canvas = document.getElementById('linechart-positive-sbers');
+            let canvas = document.getElementById('linechart-positive-canvas');
             let context = canvas.getContext('2d');
             let xData = [];
             let yData = [];

@@ -1,49 +1,49 @@
-﻿.body{
-    background-color:darkslategray;
-}
-.header {
+﻿.body {
+    background-color: #161928;
+    position: relative;
     display: flex;
-    justify-content: center;
-    left: 200px;
+    
+}
+.header-div {
+    position: fixed;
+    margin-left:65%;
+    margin-top:20px;
+
 }
 .import-button {
-    background-color: black;
+    background-color: #383689;
     color: white;
+    width: 140px;
     height: 43px;
-    padding: 10px 22px;
+/*    padding: 10px 22px;*/
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
+    opacity: 0.9;
+    margin-left: 20px;
 }
 input[type="file"] {
     width: 400px;
     height: 30px;
     padding: 6px;
     border: 1px solid #ccc;
-    background-color: gray;
+    background-color: #1b2131;
     border-radius: 4px;
     color: white;
-    
-}
-.between-div{
-    font-size: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    align-items: center;
-    margin-top:10px;
+    opacity:0.9;
 }
 
 
-input[type="file"]::file-selector-button {
-    padding: 6px 18px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+
+    input[type="file"]::file-selector-button {
+        padding: 6px 18px;
+        background-color: #1b2131;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        opacity:1;
+    }
 /*
 input[type="file"]::file-selector-button:hover {
     background-color: #0056b3;
@@ -54,60 +54,49 @@ input[type="file"]::file-selector-button:focus {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
 }*/
 .container{
-    position:relative;
+    position:fixed;
     overflow-x:hidden;
 }
 .menu {
     position: fixed;
-    left: 0;
-    top: 0;
-    width: 25%;
+    width: 17%;
     height: 100vh;
     display: flex;
     align-items: start;
     justify-content: center;
-    background-color: gray;
+    background-color: #1c2536;
     transition: 0.5s;
-    transform: translateX(-100%);
+    transform: translateX(0%);
 }
 .nav-container{
      display:flex;
-     justify-content:center;
-     align-items:center;
+/*     justify-content:center;
+     align-items:center;*/
      height:30%;
      flex-direction:column;
+     margin-top:320px;
 }
-.menu-btn {
-    width: 100px;
-    height: 50px;
-    background-color: black;
+.nav-container label {
     color: white;
-    position: absolute;
-    right: -100px;
-    top: 0px;
-    justify-content: center;
+    opacity: 0.8;
     font-size: 20px;
-    cursor:pointer;
-    border-radius:15px;
+    margin-bottom:15px;
 }
 
 .nav-container-item {
-    background-color: black;
     display: flex;
-    border-radius: 20px;
     align-items: center;
-    width: 350px;
-    margin-top: 20px;
-    
+    margin: 10px;
 }
 .nav-container-item img{
-    width: 140px;
-    height: 60px;
-    border-radius: 20px;
+    opacity:0.5;
+    margin-right:7px;
+    
 }
 .nav-container-item a{
     color: white;
-    font-size: 20px;
+    opacity: 0.8;
+    font-size: 18px;
     margin-left: 10px;
     margin-right: 10px;
     text-decoration:none;

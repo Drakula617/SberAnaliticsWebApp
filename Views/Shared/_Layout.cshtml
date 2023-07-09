@@ -11,31 +11,27 @@
         <div id="layout-div" class="header-div">
                 <input type="file" id="excel-file" name="file" accept=".xlsx">
                 <button id="import-excel-but" class="import-button">Импорт</button>
-            <div class="between-div">
-                <p>Диапозон дат анализируемых данных:</p>
-                <p>{{datebetween.dateBegin}} - {{datebetween.dateEnd}}</p>
-            </div>
         </div>
     </header>
     <div class="container">
         <div id="menu" class="menu">
-            
-            <button id="menu-btn" class="menu-btn">Меню</button>
             <nav class="nav-container">
+                <label>Charts</label>
                 <div class="nav-container-item" href="#">
-                    <img src="/gifs/lineChart.gif" />
-                    <a href="#">Линейный график </a>
+                    <img src="~/images/line-32.png" />
+                    <a href="/Home/LineChartPage">Line Chart </a>
                 </div>
                 <div class="nav-container-item" href="#">
-                    <img src="/gifs/piechart.gif"/>
-                    <a href="#">Круговая диаграмма</a>
+                    <img src="~/images/pie-chart-3-32.png" />
+                    <a href="/Home/PieChartPage">Pie Chart</a>
                 </div>
             </nav>
         </div>
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
     </div>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
     <script type="text/javascript" src="/js/layout.js"></script>
 </body>
 </html>

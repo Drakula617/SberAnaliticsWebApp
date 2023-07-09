@@ -11,52 +11,57 @@
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom/dist/chartjs-plugin-zoom.min.js"></script>
     </head>
     <body>
-        <div id="linechart-page-div">
-        <div class="linechart-div">
-            <label>График всех транзакций</label>
-            <canvas id="linechart-all-sbers"></canvas>
+
+        <div id="linechart-page-div" class="linechart-page-div">
+            <div class="information-boxes">
+                <div class="information-box-item">
+                    <div class="container-information">
+                        <div class="container-icon-and-data">
+                            <img class="icon-information-box" src="~/images/check-mark-3-32.png" />
+                        <label class="number-information-box">{{countSbers}}</label>
+                        </div>
+                        <label class="title-information-box">Кол-во транзакций</label>
+                    </div>
+                </div>
+                <div class="information-box-item">
+                    <div class="container-information">
+                    <div class="container-icon-and-data">
+                            <img class="icon-information-box" src="~/images/calendar-10-32.png" />
+                        <label class="number-information-box">{{datebetween.dateBegin}} - {{datebetween.dateEnd}}</label>
+                        </div>
+                        <label class="title-information-box">Диапозон дат</label>
+                    </div>
+                </div>
+
+@*                <div class="linechart-div">
+                    <label>График всех транзакций</label>
+                    <canvas id="linechart-all-sbers"></canvas>
+                </div>
+                <div class="linechart-div">
+                    <label class="">График всех поступлений</label>
+                    <canvas id="linechart-positive-sbers"></canvas>
+                </div>
+                <div class="linechart-div">
+                    <label>График всех расходов</label>
+                    <canvas id="linechart-negative-sbers"></canvas>
+                </div>*@
+            </div>
+            <div class="linechart-positive">
+                <div class="information-for-linechart-positive">
+                    <div class="container-summ-positive">
+                        <label class="summ-positive-text">Сумма доходов</label>
+                    <label class="summ-positive">{{sumPositive}} р</label>
+                    </div>
+
+                </div>
+                <div>
+                    <canvas id="linechart-positive-canvas" class="linechart-positive-canvas">
+
+                    </canvas>
+                </div>
+            </div>
         </div>
-        <div class="linechart-div">
-            <label class="">График всех поступлений</label>
-            <canvas id="linechart-positive-sbers"></canvas>
-        </div>
-        <div class="linechart-div">
-            <label>График всех расходов</label>
-            <canvas id="linechart-negative-sbers"></canvas>
-        </div>
-            <table class="datagrid">
-                <thead>
-                    <tr>
-                        <th>
-                            Дата и время
-                        </th>
-                        <th>
-                            Название
-                        </th>
-                        <th>
-                            Категория
-                        </th>
-                        <th>
-                            Сумма операции
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="sber in sbersInTable">
-                        <th>{{sber.datetime}}</th>
-                        <th>{{sber.name}}</th>
-                        <th>{{sber.category}}</th>
-                        <th v-if="sber.summ > 0" >
-                        <label class="positive_summ">{{sber.summ}}</label>
-                        </th>
-                        <th v-else>
-                        <label class="negative_summ">{{sber.summ}}</label>
-                        </th>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <script src="/js/line_chart.js">
+    <script type="text/javascript" src="/js/line_chart.js">
 
         </script>
 

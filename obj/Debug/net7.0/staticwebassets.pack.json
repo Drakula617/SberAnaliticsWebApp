@@ -17,12 +17,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\gifs\\lineChart.gif",
-      "PackagePath": "staticwebassets\\gifs\\lineChart.gif"
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\images\\calendar-10-32.png",
+      "PackagePath": "staticwebassets\\images\\calendar-10-32.png"
     },
     {
-      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\gifs\\pieChart.gif",
-      "PackagePath": "staticwebassets\\gifs\\pieChart.gif"
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\images\\check-mark-3-32.png",
+      "PackagePath": "staticwebassets\\images\\check-mark-3-32.png"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\images\\double-sided arrow.jpg",
+      "PackagePath": "staticwebassets\\images\\double-sided arrow.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\images\\line-32.png",
+      "PackagePath": "staticwebassets\\images\\line-32.png"
+    },
+    {
+      "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\images\\pie-chart-3-32.png",
+      "PackagePath": "staticwebassets\\images\\pie-chart-3-32.png"
     },
     {
       "Id": "C:\\Users\\gidin\\source\\repos\\SberAnaliticsWebApp\\SberAnaliticsWebApp\\wwwroot\\js\\layout.js",

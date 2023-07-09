@@ -17,7 +17,10 @@ namespace SberAnaliticsWebApp.Controllers
         {
             return View();
         }
-
+        public IActionResult PieChartPage()
+        {
+            return View();
+        }
         public async Task<IActionResult> ImportAndGetSbers([FromForm] IFormFile file)
         {
             await _userContext.LoadDataFromExcel(file);

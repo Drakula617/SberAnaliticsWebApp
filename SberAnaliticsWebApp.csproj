@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <None Include="wwwroot\css\line_chart_page.css" />
-    <None Include="wwwroot\gifs\lineChart.gif" />
   </ItemGroup>
 
   <ItemGroup>
